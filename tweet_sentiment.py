@@ -33,7 +33,7 @@ def print_tweet_sentiment_score(a_tweet_array, a_sent_dict):
         for word in tweet.split():
             if word in a_sent_dict:
                 tweet_score += int(a_sent_dict[word])
-        print tweet_score
+        print "TWEET: " + tweet + " SCORE: " + str(tweet_score)
 
 
 def main():
